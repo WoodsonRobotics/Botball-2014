@@ -1,4 +1,0 @@
-Botball
-=======
-
-Stuff for botball
