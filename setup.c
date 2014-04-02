@@ -1,9 +1,12 @@
-// still don't know whether/what to put in here vs header...
+#define lightPort 0   // infrared analog
+
 void setup() {
+	
 	enable_servos();
 
 	wait_for_light(lightPort);
 	beep();
 
-	shutdown_in(119);			
+	shut_down_in(120);	
+	
 }

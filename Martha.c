@@ -1,15 +1,28 @@
 #include <stdio.h> 
 #include <stdlib.h>
-#include "header.h"
+
+#define leftWheel 1   // motor
+#define rightWheel 0  // motor
+#define sweeperPort 3 // motor
+#define raisePort 0   // servo
+#define liftPort 3   // servo
+#define lightPort 0   // infrared analog
+#define topHatPort 11 // analog
+
+#define restPos 1024
+#define pinkVal 0
+#define greenVal 1
 
 void lift();
 void turn(int degree, int direction);
-void move(int speed, int seconds)
+void move(int speed, int seconds);
 void sweeper(int d,int t);
-void setup(); // needed?...
+void setup(); 
 void decide();
-void mav();
 int main() {
+	
+	setup();
+	
 	printf("Hello World! \n I'm Martha and you're about to get rekt. \n");
 	
 	printf("To the poms! \n");
@@ -38,7 +51,7 @@ int main() {
 	move(100,1);
 	
 	system("clear");
-	printf("Sorting... \n");`
+	printf("Sorting... \n");
 	
 	decide();
 	decide();

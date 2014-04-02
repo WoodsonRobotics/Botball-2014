@@ -1,3 +1,10 @@
+#define leftWheel 1   // motor
+#define rightWheel 0  // motor
+#define sweeperPort 3 // motor
+
+#define pinkVal 0
+#define greenVal 1
+
 void decide() {
 	
 	camera_close();
@@ -31,7 +38,7 @@ if(get_object_count(pinkVal) > get_object_count(greenVal)) {
 		mav(rightWheel, -200);
 		msleep(300);
 	}
-
+}
 
 		
 	

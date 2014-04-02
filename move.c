@@ -1,3 +1,6 @@
+#define leftWheel 1   // motor
+#define rightWheel 0  // motor
+
 void move(int speed, int seconds) {
 		
 	mav(leftWheel, speed);

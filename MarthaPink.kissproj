@@ -1,0 +1,4 @@
+[General]
+DEPENDENCIES=@Invalid()
+COMPILE_LIB=false
+AUTO_COMPILE_DEPS=false

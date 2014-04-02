@@ -1,3 +1,4 @@
+#define sweeperPort 3 // motor
 
 void sweeper(int d,int t) {    // d for direction, -1 in, 1 out
 		mav(sweeperPort,d*500);
